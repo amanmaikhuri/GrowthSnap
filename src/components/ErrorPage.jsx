@@ -1,6 +1,6 @@
 const ErrorPage = () => {
   return (
-    <div>
+    <div className="px-4 py-6">
         404 : Error Found (Internal Server Error!)
     </div>
   )

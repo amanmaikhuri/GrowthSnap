@@ -1,6 +1,8 @@
 const GrowthSnap = () => {
   return (
-    <div>GrowthSnap</div>
+    <div>
+      comming soon...
+    </div>
   )
 }
 export default GrowthSnap

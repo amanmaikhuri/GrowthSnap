@@ -1,6 +1,8 @@
 const Dashboard = () => {
   return (
-    <div>Dashboard</div>
+    <div className="px-4 py-6">
+      comming Soon....
+    </div>
   )
 }
 export default Dashboard

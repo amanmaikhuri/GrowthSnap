@@ -1,8 +1,8 @@
 import image from "../assets/aroma.jpeg"
 
 import { useNavigate } from "react-router";
-import { BarChart2, MessageCircle, Sun } from "lucide-react"
-import { FaBookOpen, FaMoneyBillWave, FaTasks } from "react-icons/fa"
+import { BarChart2, CopyCheck,MessageCircle, Sun } from "lucide-react"
+import { FaBookOpen, FaTasks } from "react-icons/fa"
 import { GiPayMoney } from 'react-icons/gi'
 
 import Header from "./Header";
@@ -38,6 +38,10 @@ const HomePage = () => {
   //redirect to to-do-list route
     function redirectToTasks(){
     navigate("/toDoList")
+  }
+  //redirect to paste
+      function redirectToPaste(){
+    navigate("/pastes")
   }
 
   
@@ -101,12 +105,13 @@ const HomePage = () => {
             <p className="text-[11px] text-center text-emerald-500 font-semibold">Find your insights here!</p>
           </div>
 
-        {/* Ai summariser */}
-          {/* <div className="h-[45%] w-[45%] p-4 md:p-6 border-emerald-500 border-2 rounded-lg flex flex-col justify-center items-center bg-gradient-to-b from-pink-200">
-            <MessageCircle size={27} color="blue" onClick={redirectToShreeya}/>
-            <h2 className="text-sm text-purple-950">Ai Summariser</h2>
-            <p className="p-2 text-[11px] text-center text-emerald-500 font-semibold">Talk to shreeya- an ai mental health companion .</p>
-          </div> */}
+        {/* save Pastes and passwords*/}
+          <div className="h-[45%] w-[45%] p-4 md:p-6 border-emerald-500 border-2 rounded-lg flex flex-col justify-center items-center bg-gradient-to-b from-pink-200"
+          onClick={redirectToPaste}>
+            <CopyCheck size={26} color="blue"/>
+            <h2 className="text-sm text-purple-950">Paste App</h2>
+            <p className="p-2 text-[11px] text-center text-emerald-500 font-semibold">Save pastes,passwords or other important data.</p>
+          </div>
         </div>
     </div>
   )

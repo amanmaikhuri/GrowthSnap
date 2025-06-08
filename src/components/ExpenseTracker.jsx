@@ -1,6 +1,9 @@
 const ExpenseTracker = () => {
   return (
-    <div>ExpenseTracker</div>
+    <div>
+      
+      comming Soon....
+    </div>
   )
 }
 export default ExpenseTracker
