@@ -16,7 +16,6 @@ import Shreeya from './components/Shreeya.jsx';
 import ToDoList from './components/ToDoList.jsx';
 import AiSummariser from './components/AiSummariser.jsx';
 import ErrorPage from './components/ErrorPage.jsx';
-import Auth from './components/Auth.jsx';
 
 import { Toaster } from 'react-hot-toast';
 import PastesView from "./components/PastesView.jsx"
@@ -153,14 +152,6 @@ const router = createBrowserRouter(
     <div>
       <Header />
        <ErrorPage />
-    </div>,
-  },
-  {
-    path: "/auth",
-    element:
-    <div>
-       <header />
-        <Auth />
     </div>,
   },
   ]
