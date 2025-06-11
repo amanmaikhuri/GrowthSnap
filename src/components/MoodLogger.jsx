@@ -23,12 +23,23 @@ const MoodLogger = () => {
   return (
     <div>
       <div className="h-full w-full">
-      <div className="md:px-5 max-w-[1040px] mx-auto py-4 bg-gradient-to-b from-blue-500">
+      <div className="md:px-5 max-w-[1040px] mx-auto py-4">
         {/* mood section  */}
           <form action={handleSubmit(SubmitJournal)}
           className="flex flex-col items-center gap-2">
-            <div>
-              <select name="moods" id="mood" className="border py-1 pb-2 rounded-md bg-blue-600 text-white font-semibold"
+            {/* <div className="flex gap-5">
+              <input type="search" placeholder="search here" 
+              className="border px-2 py-1 rounded-lg"/>
+              <select name="" id=""
+              className="border px-4 py-1 rounded-lg">
+                <option value="Filter">Filter</option>
+                <option value="Filter">Month</option>
+                <option value="Filter">date</option>
+              </select>
+            </div> */}
+            <div className="flex gap-4 items-center text-gray cursor-pointer">
+              <label htmlFor="mood">How are you feeling ?</label>
+              <select name="moods" id="mood" className="border pt-1 pb-2 rounded-md text-sm bg-purple-500 text-white font-semibold"
               {...register("mood",{required : true})}>
                 <option value="😃 (happy)">😃 (happy)</option>
                 <option value="🤩 (excited)">🤩 (excited)</option>
@@ -75,7 +86,7 @@ const MoodLogger = () => {
             </div>
 
             <div className="flex flex-col gap-2">
-              <h2 className="text-purple-950 font-bold">Reflective Journal</h2>
+              <h2 className="text-purple-950 font-bold cursor-pointer">Reflective Journal</h2>
               <textarea name="journal"
               className="border rounded-md h-[14rem] w-[20rem] md:h-[24rem] md:w-[34rem] lg:h-[24rem] lg:w-[42rem] text-green-950 px-2 py-2"
               {...register("journal",{required : true})}>
@@ -83,12 +94,12 @@ const MoodLogger = () => {
             </div>
 
             <input type="submit" value="Submit" 
-            className="border px-6 py-1 rounded-md bg-purple-950 text-white font-bold"/>
+            className="border px-6 py-1 rounded-md bg-blue-500 hover:bg-blue-950 text-white font-bold"/>
           </form>
 
           {/* Ai summary for the journal  */}
           <div className=" text-sm md:text-md lg:text-lg px-4 md:px-6">
-            <h3 className="font-bold text-green-950 px-2 py-2">Your Journal Summary In Pointers</h3>
+            <h3 className="font-bold text-blue-500 px-2 py-2">Your Journal Summary In Pointers</h3>
             <ul>
               <li className="flex gap-2"><CheckCircle2Icon />Lorem ipsum dolor sit amet.</li>
               <li className="flex gap-2"><CheckCircle2Icon />Sapiente, repudiandae eos. Odit, laboriosam.</li>

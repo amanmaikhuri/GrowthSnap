@@ -17,7 +17,7 @@ const HomePage = () => {
 
   //redirect to growth snap route
   function redirectToGrowthSnap(){
-    navigate("/growthSnap")
+    navigate("/evolve")
   }
 
   //redirect to Ai Companion route

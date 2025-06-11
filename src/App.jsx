@@ -21,6 +21,7 @@ import Auth from './components/Auth.jsx';
 import { Toaster } from 'react-hot-toast';
 import PastesView from "./components/PastesView.jsx"
 import PasteList from "./components/PasteList.jsx"
+import GrowthSnapHome from "./components/GrowthSnapHome.jsx"
 
 const router = createBrowserRouter(
   [
@@ -83,6 +84,14 @@ const router = createBrowserRouter(
     </div>,
   },
   {
+    path: "/evolve",
+    element:
+    <div>
+      <Header />
+       <GrowthSnapHome />
+    </div>,
+  },
+   {
     path: "/growthSnap",
     element:
     <div>

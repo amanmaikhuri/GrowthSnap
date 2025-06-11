@@ -37,7 +37,7 @@ const Pastes = () => {
         setValue('');
         setSearchParams({});
     }
-    //to handle pasteid change due to updation window 
+    //to handle pasteId change due to updation window 
     useEffect(() => {
       if(pasteId){
         const paste = allPastes.find((p)=>p._id === pasteId);

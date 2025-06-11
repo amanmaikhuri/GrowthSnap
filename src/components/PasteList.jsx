@@ -101,9 +101,9 @@ const PasteList = () => {
                             <Calendar size={20}/>
                             {paste.createdAt}
                           </div>
-                          <div className="w-fit border px-4 py-0.5 rounded-md font-semibold text-sm">
+                          {/* <div className="w-fit border px-4 py-0.5 rounded-md font-semibold text-sm">
                             code
-                          </div>
+                          </div> */}
                       </div>
                       </div>
                   </div>
